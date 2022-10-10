@@ -1,0 +1,125 @@
+.img1 {
+    height: 150px;
+    width: 150px;
+    margin-top: 30px;
+    margin-bottom: 0px;
+    border-radius: 50%;
+}
+
+.img2 {
+    float: right;
+    margin-top: 30px;
+    margin-left: 10px;
+    height: 150px;
+    width: 150px;
+}
+
+.img3{
+    float: left;
+    margin-top: 30px;
+    margin-right: 10px;
+    height: 150px;
+    width: 150px;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family:-apple-system,BlinkMacSystemFont, "Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans- serif;
+    font-size: 18px;
+}
+.container {
+    max-width: 940px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-gap: 1.2remx;
+    padding:0 1rem;
+  }
+
+  .container > * {
+    border-radius: 3px;
+  }
+ 
+  header, footer {
+    grid-column: 1 / -1;
+}
+
+#header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #63B3ED;
+    color: #FFFFFF;
+    gap: 10px;
+    padding: .5rem;
+}
+
+#header .name{
+    border-radius: 50%;
+    font-size: 36px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+article{
+    
+    max-width: fit-content;
+    padding: 1rem;
+}
+article>h2{
+    color: #48BB78;
+    font-family: 32px;
+}
+
+article .dateAuthor{
+    color: #718096;
+}
+
+.blogContent img{
+    float: right;
+    margin-left: 1rem;
+}
+section{
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+    padding: 1rem;
+    margin-top: 1rem;
+    border-radius: 5px;
+}
+
+section>h3{
+    color: #48BB78;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+section ul li {
+    color: #4299E1;
+    margin-left: 1.6rem;
+    padding-top: .6rem;
+}
+section ul li>a{
+    color: #4299E1;
+}
+.about{
+    background-color: #E2E8F0;
+}
+.about h3{
+    color: #000000;
+}
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    background-color: #2C5282;
+    color: #FFFFFF;
+}
+footer>a{
+    color: #FFFFFF;
+}
